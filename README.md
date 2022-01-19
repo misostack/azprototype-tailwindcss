@@ -41,6 +41,11 @@ yarn add mini-css-extract-plugin -D
 yarn add tailwindcss autoprefixer -D
 ```
 
+```bash
+yarn add html-webpack-plugin -D
+```
+
 ## References
 
 - [Materialize](https://materializecss.com/color.html)
+- [Assets Management](https://webpack.js.org/guides/asset-management/#loading-fonts)
