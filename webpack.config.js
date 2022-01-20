@@ -9,6 +9,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const outputPath = path.resolve(__dirname, "docs");
 
 const entry = {
+  main: ["./src/js/main.js", "./src/styles/main.scss"],
   home: ["./src/js/home.js", "./src/styles/home.scss"],
   // account: ['./js/account.js', './styles/account.scss'],
 };
@@ -84,7 +85,7 @@ plugins.push(
     title: "Home",
     filename: "index.html",
     template: "./src/index.html",
-    chunks: ["home"],
+    chunks: ["main", "home"],
   })
 );
 

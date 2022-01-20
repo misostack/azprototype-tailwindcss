@@ -7,7 +7,7 @@ module.exports = {
         primary: "#42a5f5",
       },
       fontFamily: {
-        body: ["Open Sans"],
+        body: ["arial"],
       },
       backgroundColor: {
         primary: "#1976d2",

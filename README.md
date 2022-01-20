@@ -5,22 +5,29 @@
 ```code
 src
   index.html
-  sass
-    styles.scss
+  blog.html
+  styles
+    main.scss
+    home.scss
   js
-    index.js
+    main.js
+    home.js
+    blog.js
   assets
     fonts
     images
 docs
   assets
-    css
-      styles.scss
     images
     fonts
-    js
-      - index.js
+  main.js
+  home.js
+  blog.js
+  main.css
+  home.css
+  blog.css
   index.html
+  blog.html
 ```
 
 ## Configuration steps

@@ -1,10 +1,1 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.lazyload-image {
-  @apply block;
-  background: transparent url("@/assets/images/empty-image.png") no-repeat
-    center center scroll;
-  background-size: contain;
-}
+/* Custom style for home page */
