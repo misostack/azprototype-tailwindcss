@@ -60,6 +60,26 @@ yarn add html-loader -D
 <%= require('html-loader!./partials/header.html').default %>
 ```
 
+## Google Fonts
+
+```css
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+```
+
+## Google Material Icons
+
+- https://developers.google.com/fonts/docs/material_icons
+
+```css
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+```
+
+```html
+<span class="material-icons">face</span>
+```
+
+- [Playground](https://mui.com/components/material-icons/)
+
 ## References
 
 - [Materialize](https://materializecss.com/color.html)

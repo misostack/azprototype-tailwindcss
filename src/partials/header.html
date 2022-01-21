@@ -8,18 +8,23 @@
   <title>Blog</title>
 </head>
 
-<body>
-  <nav>
+<body class="pt-20">
+  <nav class="fixed top-0 left-0 right-0 bg-white">
     <div class="nav-wrapper max-w-screen-xl mx-auto">
-      <div class="nav-container lg:flex justify-between items-center">
-        <a class="nav-brand h-16" href=""><img src="../assets/images/nodepress-logo.png" alt="nodepress" /></a>
-        <div class="lg:flex">
-          <a class="px-4 py-4 leading-4 text-gray-500 capitalize" href="">Why NodePress?</a>
-          <a class="px-4 py-4 leading-4 text-gray-500 capitalize" href="">Showcase</a>
-          <a class="px-4 py-4 leading-4 text-gray-500 capitalize" href="">Learn</a>
-          <a class="px-4 py-4 leading-4 text-gray-500 capitalize" href="">Themes</a>
-          <a class="px-4 py-4 leading-4 text-gray-500 capitalize" href="">Plugins</a>
-          <a class="px-4 py-4 leading-4 text-gray-500 capitalize" href="">Support</a>
+      <div class="nav-container p-4 flex flex-wrap justify-between items-center">
+        <a class="nav-brand inline-block"><img class="h-8 lg:h-16" src="../assets/images/nodepress-logo.png"
+            alt="nodepress" /></a>
+        <a id="nav-menu-toggle" class="lg:hidden"><span class="material-icons">menu</span></a>
+        <div class="border-b basis-full mt-4"></div>
+        <div id="nav-menu" class="nav-menu basis-full flex flex-wrap h-0 overflow-hidden transition duration-100">
+          <a class="basis-full px-4 py-4 leading-4 font-semibold text-gray-500 capitalize hover:text-primary"
+            href="">Why
+            NodePress?</a>
+          <a class="basis-full px-4 py-4 leading-4 text-gray-500 capitalize" href="">Showcase</a>
+          <a class="basis-full px-4 py-4 leading-4 text-gray-500 capitalize" href="">Learn</a>
+          <a class="basis-full px-4 py-4 leading-4 text-gray-500 capitalize" href="">Themes</a>
+          <a class="basis-full px-4 py-4 leading-4 text-gray-500 capitalize" href="">Plugins</a>
+          <a class="basis-full px-4 py-4 leading-4 text-gray-500 capitalize" href="">Support</a>
         </div>
       </div>
     </div>

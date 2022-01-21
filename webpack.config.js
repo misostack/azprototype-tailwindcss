@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 const isProductionMode = process.env.NODE_ENV === "production";
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
@@ -86,6 +87,13 @@ plugins.push(
     filename: "index.html",
     template: "./src/index.html",
     chunks: ["main", "home"],
+  })
+);
+// External JS Libs
+plugins.push(
+  new webpack.ProvidePlugin({
+    $: "jquery",
+    jQuery: "jquery",
   })
 );
 

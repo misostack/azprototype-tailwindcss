@@ -1,10 +1,11 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* Tailwind base */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .nav-brand {
-  height: 60px;
-  img {
-    @apply h-full;
-  }
 }
