@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-brand {
+  height: 60px;
+  img {
+    @apply h-full;
+  }
+}
