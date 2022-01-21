@@ -52,6 +52,14 @@ yarn add tailwindcss autoprefixer -D
 yarn add html-webpack-plugin -D
 ```
 
+```bash
+yarn add html-loader -D
+```
+
+```html
+<%= require('html-loader!./partials/header.html').default %>
+```
+
 ## References
 
 - [Materialize](https://materializecss.com/color.html)
