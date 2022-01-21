@@ -4,17 +4,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#3b9f3e",
+        primary: "#90cf43",
       },
       fontFamily: {
         body: ["arial"],
         heading: ["'Merriweather', serif"],
       },
       textColor: {
-        primary: "#3b9f3e",
+        primary: "#90cf43",
       },
       backgroundColor: {
-        primary: "#40b442",
+        primary: "#8cc43d",
       },
     },
   },
