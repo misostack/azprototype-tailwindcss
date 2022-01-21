@@ -1,5 +1,4 @@
 import "@/styles/main.scss";
-import "jquery";
 
 var Site = Site || {};
 
