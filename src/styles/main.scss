@@ -11,6 +11,16 @@
   @apply max-w-screen-xl px-4 py-4 mx-auto;
 }
 
+.body-nav-fixed {
+  @apply pt-24;
+}
+.nav-fixed {
+  @apply fixed top-0 left-0 right-0;
+}
+.nav-default {
+  @apply bg-white border-b drop-shadow-md;
+}
+
 .nav-menu {
   @apply flex flex-wrap basis-full md:basis-auto overflow-hidden;
   &-link {
@@ -18,16 +28,34 @@
   }
 }
 
-.block {
-  @apply container text-center;
+.section {
   @apply py-8;
 }
 
-.hero-block {
+.hero-section {
+  @apply text-center;
   &-heading {
     @apply text-3xl font-heading font-bold mb-4;
   }
   &-content {
     @apply leading-6 text-lg;
+  }
+}
+
+.card-post {
+  &-title {
+    @apply text-lg font-heading font-semibold;
+  }
+  &-category {
+    @apply text-sm text-gray-500 hover:text-primary;
+  }
+  &-date {
+    @apply text-sm;
+  }
+  &-description {
+    @apply py-4;
+  }
+  &-readmore-link {
+    @apply font-bold hover:text-primary;
   }
 }

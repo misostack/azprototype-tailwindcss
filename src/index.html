@@ -1,18 +1,21 @@
 <%= require('html-loader!./partials/header.html').default %>
-  <section class="block hero-block">
-    <h1 class="hero-block-heading">NodePress</h1>
-    <div class="hero-block-content">NodePress is open source software you can use to create a beautiful
+  <section class="container section hero-section">
+    <h1 class="hero-section-heading">NodePress</h1>
+    <div class="hero-section-content">NodePress is open source software you can use to create a beautiful
       website, blog, or
       app</div>
   </section>
-  <section class="container grid md:grid-cols-2 gap-8">
+  <section class="container section grid md:grid-cols-2 gap-8">
     <% for(var i=0; i<12; i++) {%>
-      <div class="card">
-        <h2 class="card-title text-lg font-heading font-semibold">NestJS là gì?</h2>
-        <div><a href="" class="text-sm text-gray-500 hover:text-primary">Category</a></div>
-        <div><span class="text-sm">19/01/2022</span></div>
-        <div class="py-4">NestJS là 1 framework nodejs sử dụng typescript, hỗ trợ phát triển ứng dụng web, api.</div>
-        <div class="text-right"><a href="" class="font-bold hover:text-primary">[Readmore]</a></div>
+      <div class="card card-post">
+        <h2 class="card-post-title">NestJS là gì?</h2>
+        <div><a href="./category.html" class="card-post-category">Category</a>
+        </div>
+        <div><span class="card-post-date">19/01/2022</span></div>
+        <div class="card-post-description">NestJS là 1 framework nodejs sử dụng typescript, hỗ trợ phát triển ứng
+          dụng web, api.</div>
+        <div class="text-right"><a href="./post.html" class="card-post-readmore-link">[Readmore]</a>
+        </div>
       </div>
       <% } %>
   </section>

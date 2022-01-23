@@ -12,6 +12,7 @@ const outputPath = path.resolve(__dirname, "docs");
 const entry = {
   main: ["./src/js/main.js", "./src/styles/main.scss"],
   home: ["./src/js/home.js", "./src/styles/home.scss"],
+  page: ["./src/styles/page.scss"],
   // account: ['./js/account.js', './styles/account.scss'],
 };
 
@@ -87,6 +88,12 @@ plugins.push(
     filename: "index.html",
     template: "./src/index.html",
     chunks: ["main", "home"],
+  }),
+  new HtmlWebpackPlugin({
+    title: "Page Content",
+    filename: "page.html",
+    template: "./src/page.html",
+    chunks: ["main", "page"],
   })
 );
 // External JS Libs
