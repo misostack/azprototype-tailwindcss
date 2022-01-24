@@ -94,6 +94,18 @@ plugins.push(
     filename: "page.html",
     template: "./src/page.html",
     chunks: ["main", "page"],
+  }),
+  new HtmlWebpackPlugin({
+    title: "Post Content",
+    filename: "post.html",
+    template: "./src/post.html",
+    chunks: ["main", "page"],
+  }),
+  new HtmlWebpackPlugin({
+    title: "Category",
+    filename: "category.html",
+    template: "./src/category.html",
+    chunks: ["main"],
   })
 );
 // External JS Libs
