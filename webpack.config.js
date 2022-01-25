@@ -13,6 +13,7 @@ const entry = {
   main: ["./src/js/main.js", "./src/styles/main.scss"],
   home: ["./src/js/home.js", "./src/styles/home.scss"],
   page: ["./src/styles/page.scss"],
+  plugins: ["./src/js/ResizeSensor.js", "./src/js/theia-sticky-sidebar.js"],
   // account: ['./js/account.js', './styles/account.scss'],
 };
 
@@ -87,7 +88,7 @@ plugins.push(
     title: "Home",
     filename: "index.html",
     template: "./src/index.html",
-    chunks: ["main", "home"],
+    chunks: ["main", "plugins", "home"],
   }),
   new HtmlWebpackPlugin({
     title: "Page Content",
