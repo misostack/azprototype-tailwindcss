@@ -5,10 +5,40 @@
       website, blog, or
       app</div>
   </section>
+  <section class="container section news-section clearfix">
+    <div data-content="newsfeature">
+      <div class="clear-fix">
+        <article class="card-post card-post-feature">
+          <a href="post.html"><img src="./assets/images/post-image.png" alt="Flower and sky" /></a>
+          <h2 class="card-post-title">
+            <a href="post.html">Điều gì khiến NestJS trở nên phổ biến?</a>
+          </h2>
+          <div class="card-post-description">
+            NestJS là một framework mã nguồn mở NodeJS, được xây dựng trên nền tảng typescript. Hỗ trợ kiến trúc
+            monolith cũng như microservice.
+          </div>
+        </article>
+        <% for(var i=0; i<2; i++) {%>
+          <article class="card-post card-post-picked">
+            <a href="post.html"><img src="./assets/images/post-image.png" alt="Flower and sky" /></a>
+            <h3 class="card-post-title"><a href="post.html">Làm thế nào để áp dụng MVC với NestJS?</a></h3>
+          </article>
+          <% } %>
+      </div>
+    </div>
+    <div data-content="newstrending">
+      <% for(var i=0; i<5; i++) {%>
+        <article class="card-post card-post-feature">
+          <a href="post.html"><img src="./assets/images/post-image.png" alt="Flower and sky" /></a>
+          <h4 class="card-post-title"><a href="post.html">Làm thế nào để áp dụng MVC với NestJS?</a></h4>
+        </article>
+        <% } %>
+    </div>
+  </section>
   <section class="container section grid md:grid-cols-2 gap-8">
     <% for(var i=0; i<12; i++) {%>
       <div class="card card-post">
-        <h2 class="card-post-title">NestJS là gì?</h2>
+        <h3 class="card-post-title">NestJS là gì?</h3>
         <div><a href="./category.html" class="card-post-category">Category</a>
         </div>
         <div><span class="card-post-date">19/01/2022</span></div>
