@@ -40,4 +40,14 @@
       </div>
     </div>
   </section>
+  <section class="container section">
+    <div class="max-w-2xl mx-auto">
+      <div class="font-heading text-2xl font-semibold">You Might Also Like</div>
+      <div class="mt-8 grid md:grid-cols-2 gap-8">
+        <% for(var i=0; i<2; i++) {%>
+          <%= require('html-loader!./partials/card-post-default.html').default %>
+            <% } %>
+      </div>
+    </div>
+  </section>
   <%= require('html-loader!./partials/footer.html').default %>
